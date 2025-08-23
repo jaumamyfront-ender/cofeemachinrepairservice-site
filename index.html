@@ -8,7 +8,7 @@
       name="description"
       content="Ремонт классических (колбовых) кофемашин. Фокус на качестве и прозрачности, долгая гарантия, демократичные цены. Выезд мастера, ремонт на месте, подменная кофемашина при необходимости. Работаем 24/7."
     />
-    <script>
+    <!-- <script>
       (function () {
         var saved = localStorage.getItem("lang");
         var nav = (
@@ -20,6 +20,32 @@
           saved ||
           (nav.startsWith("ru") ? "ru" : nav.startsWith("uk") ? "uk" : "en");
         console.log(saved, auto);
+        if (location.pathname === "/" || location.pathname === "/index.html") {
+          location.replace("/" + auto + "/");
+        }
+      })();
+    </script> -->
+    <script>
+      (function () {
+        var saved = localStorage.getItem("lang");
+
+        // Определяем язык браузера
+        var nav = (
+          navigator.language ||
+          navigator.userLanguage ||
+          "en"
+        ).toLowerCase();
+
+        // Выбираем язык: сохранённый или авто
+        var auto =
+          saved ||
+          (nav.startsWith("ru")
+            ? "ru"
+            : nav.startsWith("uk") || nav.startsWith("ua")
+            ? "ua"
+            : "en");
+
+        // Перенаправляем
         if (location.pathname === "/" || location.pathname === "/index.html") {
           location.replace("/" + auto + "/");
         }
