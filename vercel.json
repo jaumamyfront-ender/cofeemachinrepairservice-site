@@ -2,13 +2,13 @@
   "builds": [
     { "src": "index.html", "use": "@vercel/static" },
     { "src": "ru/index.html", "use": "@vercel/static" },
-    { "src": "uk/index.html", "use": "@vercel/static" },
+    { "src": "ua/index.html", "use": "@vercel/static" },
     { "src": "en/index.html", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "^/$", "dest": "/index.html" },
     { "src": "^/ru/?$", "dest": "/ru/index.html" },
-    { "src": "^/uk/?$", "dest": "/uk/index.html" },
+    { "src": "^/ua/?$", "dest": "/ua/index.html" },
     { "src": "^/en/?$", "dest": "/en/index.html" }
   ]
 }
