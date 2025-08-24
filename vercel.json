@@ -12,3 +12,20 @@
     { "src": "^/en/?$", "dest": "/en/index.html" }
   ]
 }
+{
+  "builds": [
+    { "src": "**/*.html", "use": "@vercel/static" },
+    { "src": "scripts/**/*.js", "use": "@vercel/static" },
+    { "src": "styles/**/*.css", "use": "@vercel/static" },
+    { "src": "images/**/*", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "^/$", "dest": "/index.html" },
+    { "src": "^/ru/?$", "dest": "/ru/index.html" },
+    { "src": "^/ua/?$", "dest": "/ua/index.html" },
+    { "src": "^/en/?$", "dest": "/en/index.html" },
+    { "src": "^/scripts/(.*)", "dest": "/scripts/$1" },
+    { "src": "^/styles/(.*)", "dest": "/styles/$1" },
+    { "src": "^/images/(.*)", "dest": "/images/$1" }
+  ]
+}
