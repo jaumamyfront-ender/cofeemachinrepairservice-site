@@ -3,317 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>урааааааа украінська</title>
+    <title>Ремонт классических кофемашин — честно, быстро, с гарантией</title>
     <meta
       name="description"
       content="Ремонт классических (колбовых) кофемашин. Фокус на качестве и прозрачности, долгая гарантия, демократичные цены. Выезд мастера, ремонт на месте, подменная кофемашина при необходимости. Работаем 24/7."
     />
-    <style>
-      :root {
-        --bg: #0f1220; /* тёмный фон для контраста */
-        --card: #151a2e;
-        --text: #eef2ff;
-        --muted: #b8c0ff;
-        --accent: #7c9cff;
-        --ok: #8be28b;
-        --warn: #ffd27e;
-        --danger: #ff8aa1;
-        --brand: #9ab6ff;
-        --max: 1100px;
-        --radius: 14px;
-        --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-      }
-      * {
-        box-sizing: border-box;
-      }
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        background: var(--bg);
-        color: var(--text);
-        font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Arial,
-          Helvetica, sans-serif;
-      }
-      a {
-        color: var(--brand);
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      .container {
-        max-width: var(--max);
-        margin: 0 auto;
-        padding: 0 18px;
-      }
-      header {
-        position: sticky;
-        top: 0;
-        z-index: 40;
-        background: rgba(15, 18, 32, 0.75);
-        backdrop-filter: blur(8px);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      }
-      .nav {
-        display: flex;
-        gap: 16px;
-        align-items: center;
-        justify-content: space-between;
-        padding: 12px 0;
-      }
-      .logo {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-weight: 700;
-      }
-      .logo-badge {
-        width: 30px;
-        height: 30px;
-        border-radius: 8px;
-        background: linear-gradient(135deg, var(--accent), #c8d6ff);
-      }
-      .nav-cta {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-      }
-      .btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 16px;
-        border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.14);
-        background: transparent;
-        color: var(--text);
-        cursor: pointer;
-        transition: 0.2s;
-        box-shadow: none;
-      }
-      .btn:hover {
-        transform: translateY(-1px);
-      }
-      .btn.primary {
-        background: var(--accent);
-        color: #0a0f1e;
-        border-color: transparent;
-      }
-      .btn.ok {
-        background: var(--ok);
-        color: #0a0f1e;
-        border-color: transparent;
-      }
-      .pill {
-        font-size: 0.85rem;
-        color: var(--bg);
-        background: var(--warn);
-        border-radius: 999px;
-        padding: 6px 10px;
-        display: inline-block;
-      }
-      /* hero */
-      .hero {
-        padding: 38px 0 26px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-      }
-      .hero-grid {
-        display: grid;
-        gap: 22px;
-        grid-template-columns: 1.1fr 0.9fr;
-      }
-      .hero h1 {
-        font-size: clamp(28px, 4.5vw, 44px);
-        line-height: 1.15;
-        margin: 8px 0;
-      }
-      .lead {
-        color: var(--muted);
-        font-size: 1.05rem;
-      }
-      .badges {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
-        margin-top: 16px;
-      }
-      .badge {
-        background: var(--card);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        padding: 12px;
-        border-radius: 12px;
-      }
-      .card {
-        background: var(--card);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: var(--radius);
-        padding: 16px;
-        box-shadow: var(--shadow);
-      }
-      .hero-side {
-        display: grid;
-        gap: 12px;
-        height: max-content;
-      }
-      .flag {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-      }
-      .flag i {
-        font-style: normal;
-        font-weight: 700;
-      }
-      /* steps */
-      .section {
-        padding: 32px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-      }
-      .section h2 {
-        font-size: clamp(22px, 3vw, 30px);
-        margin: 0 0 14px;
-      }
-      .steps {
-        display: grid;
-        gap: 12px;
-        grid-template-columns: repeat(4, 1fr);
-      }
-      .step {
-        background: var(--card);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 12px;
-        padding: 14px;
-      }
-      .kpi {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
-      }
-      .kpi .stat {
-        background: var(--card);
-        padding: 14px;
-        border-radius: 12px;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        text-align: center;
-      }
-      .stat b {
-        font-size: 1.4rem;
-        display: block;
-      }
-      /* services */
-      .grid-3 {
-        display: grid;
-        gap: 12px;
-        grid-template-columns: repeat(3, 1fr);
-      }
-      /* price table */
-      table {
-        width: 100%;
-        border-collapse: separate;
-        border-spacing: 0 10px;
-      }
-      th,
-      td {
-        padding: 12px 14px;
-      }
-      thead th {
-        font-weight: 600;
-        color: var(--muted);
-        text-align: left;
-      }
-      tbody tr {
-        background: var(--card);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-      }
-      tbody tr td:first-child {
-        border-radius: 10px 0 0 10px;
-      }
-      tbody tr td:last-child {
-        border-radius: 0 10px 10px 0;
-        text-align: right;
-      }
-      .hint {
-        color: var(--muted);
-        font-size: 0.92rem;
-      }
-      /* contact */
-      form {
-        display: grid;
-        gap: 10px;
-      }
-      input,
-      textarea {
-        width: 100%;
-        padding: 12px 14px;
-        border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.14);
-        background: #0e1326;
-        color: var(--text);
-      }
-      .inline {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-      }
-      footer {
-        padding: 28px 0;
-        color: var(--muted);
-      }
-      .foot {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr auto;
-      }
-      .sticky-help {
-        position: fixed;
-        right: 16px;
-        bottom: 16px;
-        background: var(--danger);
-        color: #0a0f1e;
-        padding: 10px 14px;
-        border-radius: 999px;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-        box-shadow: var(--shadow);
-        font-weight: 700;
-      }
-      /* responsive */
-      @media (max-width: 920px) {
-        .hero-grid {
-          grid-template-columns: 1fr;
-        }
-        .badges {
-          grid-template-columns: 1fr 1fr 1fr;
-        }
-        .steps {
-          grid-template-columns: 1fr 1fr;
-        }
-        .kpi {
-          grid-template-columns: 1fr 1fr 1fr;
-        }
-        .grid-3 {
-          grid-template-columns: 1fr 1fr;
-        }
-      }
-      @media (max-width: 560px) {
-        .badges {
-          grid-template-columns: 1fr 1fr;
-        }
-        .kpi {
-          grid-template-columns: 1fr 1fr;
-        }
-        .grid-3 {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
+
+    <!-- <script src="./scripts/autochangelanguage.js" defer></script>
+    <script src="./scripts/carousel.js" defer></script>
+    <link rel="stylesheet" href="./styles/globalstyles.css" />
+    <link rel="stylesheet" href="./styles/carousel.css" /> -->
+    <script src="/scripts/autochangelanguage.js" defer></script>
+    <script src="/scripts/carousel.js" defer></script>
+    <link rel="stylesheet" href="/styles/globalstyles.css" />
+    <link rel="stylesheet" href="/styles/carousel.css" />
   </head>
   <body>
     <header>
       <div class="container nav">
         <div class="logo">
           <div class="logo-badge" aria-hidden="true"></div>
-          <span>урааааааа украінська</span>
+          <span>polish version</span>
         </div>
         <div class="nav-cta">
           <a class="btn" href="tel:+70000000000"
@@ -322,6 +32,19 @@
           <a class="btn primary" href="https://wa.me/70000000000"
             >Написать в WhatsApp</a
           >
+          <nav>
+            <a href="/ru/" onclick="localStorage.setItem('lang','ru')"
+              >🇷🇺 Русский</a
+            >
+            |
+            <a href="/uk/" onclick="localStorage.setItem('lang','uk')"
+              >🇺🇦 Українська</a
+            >
+            |
+            <a href="/en/" onclick="localStorage.setItem('lang','en')"
+              >🇬🇧 English</a
+            >
+          </nav>
         </div>
       </div>
     </header>
@@ -429,6 +152,43 @@
               <b>12 мес</b><span class="hint">макс. гарантия</span>
             </div>
           </div>
+        </div>
+        <div class="wrap">
+          <h1 class="title">
+            Карусель «фотоплёнка» — автопрокрутка + лайтбокс
+          </h1>
+
+          <div
+            class="filmstrip"
+            aria-label="Карусель изображений в стиле фотоплёнки"
+          >
+            <div class="viewport" id="viewport">
+              <div class="track" id="track" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <div class="controls">
+            <button class="btn" id="prev" aria-label="Предыдущие">⟨</button>
+            <button class="btn" id="next" aria-label="Следующие">⟩</button>
+          </div>
+        </div>
+
+        <!-- Лайтбокс -->
+        <div
+          class="lightbox"
+          id="lightbox"
+          aria-hidden="true"
+          role="dialog"
+          aria-label="Просмотр изображения в полном размере"
+        >
+          <button class="lightbox__close" id="closeLb" aria-label="Закрыть">
+            Закрыть ✕
+          </button>
+          <img
+            class="lightbox__img"
+            id="lightboxImg"
+            alt="Открытое изображение"
+          />
         </div>
       </section>
 
