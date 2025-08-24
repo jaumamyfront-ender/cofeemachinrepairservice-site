@@ -1,0 +1,220 @@
+:root {
+  /* Сколько слайдов видно одновременно (по умолчанию 5 на десктопе) */
+  --visible: 5;
+  /* Отступ между кадрами */
+  --gap: 12px;
+  /* Закругление рамок «кадров» */
+  --frame-radius: 10px;
+  /* Скорость анимации перелистывания */
+  --transition-ms: 700ms;
+  /* Цвет плёнки */
+  --film-color: #111;
+  /* Цвет рамки кадра */
+  --frame-color: #000;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    Helvetica, Arial;
+  background: #0b0b0b;
+  color: #eaeaea;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 32px 16px;
+}
+
+.wrap {
+  width: min(1200px, 96vw);
+}
+
+.title {
+  margin: 0 0 14px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+/* ====== ПЛЁНКА (декор + область слайдов) ====== */
+.filmstrip {
+  position: relative;
+  background: var(--film-color);
+  padding: 28px 18px; /* верх/низ = планки с перфорацией */
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Перфорация сверху и снизу */
+.filmstrip::before,
+.filmstrip::after {
+  content: "";
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  height: 16px;
+  background: radial-gradient(
+        circle at 8px 50%,
+        rgba(0, 0, 0, 0) 6px,
+        rgba(0, 0, 0, 0.9) 7px
+      )
+      left/40px 100% repeat-x,
+    linear-gradient(#222, #050505);
+  border-radius: 8px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+.filmstrip::before {
+  top: 6px;
+}
+.filmstrip::after {
+  bottom: 6px;
+}
+
+.viewport {
+  overflow: hidden; /* маска для трека */
+  width: 100%;
+}
+
+.track {
+  display: flex;
+  gap: var(--gap);
+  transition: transform var(--transition-ms) ease;
+  will-change: transform;
+}
+
+.slide {
+  position: relative;
+  flex: 0 0 calc((100% - (var(--gap) * (var(--visible) - 1))) / var(--visible));
+  border-radius: var(--frame-radius);
+  background: var(--frame-color);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  isolation: isolate;
+  cursor: pointer;
+  aspect-ratio: 3 / 2; /* соотношение сторон кадра */
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.05) contrast(1.02);
+  transition: transform 0.45s ease;
+}
+.slide:hover img {
+  transform: scale(1.04);
+}
+
+/* Маленькие круглые отверстия-имитация по краям кадра (ещё чуть-чуть атмосферы) */
+.slide::before,
+.slide::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  height: 6px;
+  background: radial-gradient(circle, #0000 2px, #000 3px) left/24px 100%
+    repeat-x;
+  opacity: 0.55;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+.slide::before {
+  top: 8px;
+}
+.slide::after {
+  bottom: 8px;
+}
+
+/* Управление (опционально) */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 14px;
+  user-select: none;
+}
+.btn {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  padding: 10px 14px;
+  border-radius: 999px;
+  color: #eaeaea;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  transition: transform 0.12s ease, background 0.2s ease;
+}
+.btn:active {
+  transform: translateY(1px);
+}
+.btn:hover {
+  background: #222;
+}
+
+/* ====== ЛАЙТБОКС ====== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: none; /* через класс .open включаем */
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 50;
+  backdrop-filter: blur(2px);
+}
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox__img {
+  max-width: min(92vw, 1400px);
+  max-height: 86vh;
+  width: auto;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+}
+
+.lightbox__close {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  background: #0f0f0f;
+  color: #ddd;
+  border: 1px solid #2a2a2a;
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+/* ====== РЕСПОНСИВ ====== */
+@media (max-width: 1200px) {
+  :root {
+    --visible: 4;
+  }
+}
+@media (max-width: 900px) {
+  :root {
+    --visible: 3;
+  }
+}
+@media (max-width: 640px) {
+  :root {
+    --visible: 2;
+  }
+  .filmstrip {
+    padding: 24px 14px;
+  }
+  .filmstrip::before,
+  .filmstrip::after {
+    left: 14px;
+    right: 14px;
+  }
+}
