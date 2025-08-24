@@ -1,19 +1,5 @@
 {
   "builds": [
-    { "src": "index.html", "use": "@vercel/static" },
-    { "src": "ru/index.html", "use": "@vercel/static" },
-    { "src": "ua/index.html", "use": "@vercel/static" },
-    { "src": "en/index.html", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "src": "^/$", "dest": "/index.html" },
-    { "src": "^/ru/?$", "dest": "/ru/index.html" },
-    { "src": "^/ua/?$", "dest": "/ua/index.html" },
-    { "src": "^/en/?$", "dest": "/en/index.html" }
-  ]
-}
-{
-  "builds": [
     { "src": "**/*.html", "use": "@vercel/static" },
     { "src": "scripts/**/*.js", "use": "@vercel/static" },
     { "src": "styles/**/*.css", "use": "@vercel/static" },
