@@ -67,7 +67,7 @@ function ensureClones() {
 ensureClones();
 window.addEventListener("resize", () => ensureClones());
 
-// ====== Логика сдвига ======
+// ====== Логика сдвига =====
 let index = 0;
 let isAnimating = false;
 let autoplayId = null;
