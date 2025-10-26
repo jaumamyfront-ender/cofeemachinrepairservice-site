@@ -1,0 +1,87 @@
+.wrapperDecsriptionFirstBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  margin-top: 3%;
+}
+.containerDescription {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-self: center;
+  justify-self: center;
+  justify-content: space-around;
+}
+.nameOfCompany {
+  display: flex;
+  align-self: center;
+  order: 1;
+  color: var(--colormaintext);
+  font-size: 60px;
+  text-align: center;
+  text-wrap: auto;
+}
+
+.wrapperDescriptionAndMainImage {
+  display: flex;
+  justify-content: center;
+  order: 2;
+  margin-top: 5%;
+}
+
+.ImageDescription {
+}
+.descriptionShortContainerwrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.descriptionShortContainer {
+}
+
+.decsripticontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.decsripticontainerin {
+  display: flex;
+  flex-direction: row;
+  min-width: 110px;
+  max-width: 210px;
+}
+.imageDescriptionSettings {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-self: center;
+}
+.mainDescriptionSettings {
+  margin-left: 5px;
+  color: var(--colormaintext);
+  font-weight: 600;
+  font-size: 32px;
+}
+.otherDescriptionSettings {
+  color: var(--colormaintext);
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 40%;
+}
+.buttonsCallcontainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  justify-content: center;
+}
+.callMaintanace {
+  margin: 0 10px;
+  border-radius: 30px;
+  background-color: var(--standardgreencolor);
+  font-size: 20px;
+  font-weight: 100;
+  width: 180px;
+  height: 70px;
+}

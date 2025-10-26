@@ -3,6 +3,9 @@
   --bg2: #ecdecf;
   --bg3: #e4d4c4;
 
+  --standardgreencolor: #99d5a8;
+  --colormaintext: #493843;
+
   --card: #151a2e;
   --text: #eef2ff;
   --muted: #b8c0ff;
@@ -38,4 +41,13 @@ header {
   background: rgba(156, 158, 166, 0.75);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
