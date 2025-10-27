@@ -9,7 +9,7 @@
 .containerDescription {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 100%;
   align-self: center;
   justify-self: center;
   justify-content: space-around;
@@ -29,6 +29,7 @@
   justify-content: center;
   order: 2;
   margin-top: 5%;
+  flex-wrap: wrap;
 }
 
 .ImageDescription {
@@ -39,7 +40,7 @@
   justify-content: center;
 }
 .descriptionShortContainer {
-  width: 100%;
+  width: 95%;
   max-width: 480px;
   padding: 20px;
   border-top: 2px solid #000;
@@ -130,11 +131,24 @@
 .callMaintanace {
   margin: 0 10px;
   border-radius: 30px;
-  background-color: var(--standardgreencolor);
+  background-color: var(--colorbutton);
   font-size: 20px;
   font-weight: 100;
   width: 180px;
   height: 70px;
+  border-style: dashed;
 }
-@media screen (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrapperDescriptionAndMainImage {
+    margin-top: 1%;
+  }
+  .descriptionShortContainer {
+    width: auto;
+    max-width: none;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 680px) {
+  .nameOfCompany {
+    font-size: 40px;
+  }
 }
