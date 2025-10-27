@@ -39,55 +39,57 @@
   justify-content: center;
 }
 .descriptionShortContainer {
-  width: 480px;
+  width: 100%;
+  max-width: 480px;
   padding: 20px;
-  border-top: 1.5px solid #000;
-  border-left: 1.5px solid #000;
-  border-right: 1.5px solid #000;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
   border-bottom: 0px solid #000;
   border-radius: 16px 16px 0px 20px;
   position: relative;
   font-family: "Inter", sans-serif;
   background: transparent;
 }
+
 /* "вырез" внизу справа */
 .descriptionShortContainer:after {
   content: "";
   position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 55px;
-  height: 55px;
+  right: 0px; /* компенсация толщины border-right */
+  bottom: -3px; /* компенсация толщины border-bottom */
+  width: 50px;
+  height: 53px;
   background: transparent;
-  /* border-top: 1.5px solid #000; */
-  border-left: 1.5px solid #000;
-  /* border-right: 1.5px solid #000; */
-  border-bottom: 1.5px solid #000;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 0px;
-  transform: translate(0%, 100%) rotate(180deg);
+  transform: rotate(180deg);
+  top: 100%;
 }
+
 .vertical-line {
   display: inline-block;
-  width: 1px;
+  width: 2px;
   height: 55px;
   background: #000;
-  margin: 0 8px;
   position: absolute;
-  top: 100%;
-  left: 98.3%;
+  bottom: -55px; /* привязка к низу */
+  right: -2px;
 }
+
 .thin-line {
-  display: block; /* span по умолчанию inline — сделаем блоком */
-  width: 86.3%; /* можно задать пиксели или % */
-  height: 1px; /* толщина линии */
-  background: #000; /* цвет линии */
-  margin: 8px 0; /* отступы сверху/снизу */
+  display: block;
+  width: calc(100% - 40px - 20px); /* 100% минус ширина выреза и отступ */
+  height: 2px;
+  background: #000;
   position: absolute;
-  top: 98%;
-  left: 3.4%;
+  bottom: 0px; /* привязка к низу */
+  left: 16px;
+  top: 100%;
 }
 
 .decsripticontainer {
