@@ -39,6 +39,55 @@
   justify-content: center;
 }
 .descriptionShortContainer {
+  width: 480px;
+  padding: 20px;
+  border-top: 1.5px solid #000;
+  border-left: 1.5px solid #000;
+  border-right: 1.5px solid #000;
+  border-bottom: 0px solid #000;
+  border-radius: 16px 16px 0px 20px;
+  position: relative;
+  font-family: "Inter", sans-serif;
+  background: transparent;
+}
+/* "вырез" внизу справа */
+.descriptionShortContainer:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 55px;
+  height: 55px;
+  background: transparent;
+  /* border-top: 1.5px solid #000; */
+  border-left: 1.5px solid #000;
+  /* border-right: 1.5px solid #000; */
+  border-bottom: 1.5px solid #000;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 0px;
+  transform: translate(0%, 100%) rotate(180deg);
+}
+.vertical-line {
+  display: inline-block;
+  width: 1px;
+  height: 55px;
+  background: #000;
+  margin: 0 8px;
+  position: absolute;
+  top: 100%;
+  left: 98.3%;
+}
+.thin-line {
+  display: block; /* span по умолчанию inline — сделаем блоком */
+  width: 86.3%; /* можно задать пиксели или % */
+  height: 1px; /* толщина линии */
+  background: #000; /* цвет линии */
+  margin: 8px 0; /* отступы сверху/снизу */
+  position: absolute;
+  top: 98%;
+  left: 3.4%;
 }
 
 .decsripticontainer {
