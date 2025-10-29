@@ -48,10 +48,24 @@
   background-size: contain;
   position: relative;
   background-repeat: repeat-x;
-  padding: 38px 18px;
+  padding: 50px 0px 50px 0px;
   border-radius: 0px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+@media screen and (min-width: 200px) and (max-width: 900px) {
+  .filmstrip {
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1480px) and (max-width: 4000px) {
+  .filmstrip {
+    padding: 50px 0px 50px 0px;
+  }
+  .slide {
+    /* prettier-ignore */
+    flex: 0 0 calc((120% - (var(--gap) * (var(--visible) - 1))) / var(--visible));
+  }
 }
 /* .filmstrip {
   position: relative;
@@ -142,6 +156,12 @@
 }
 .slide::after {
   bottom: 8px;
+}
+@media screen and (min-width: 1480px) and (max-width: 4000px) {
+  .slide {
+    /* prettier-ignore */
+    flex: 0 0 calc((60% - (var(--gap) * (var(--visible) - 1))) / var(--visible));
+  }
 }
 
 /* Управление (опционально) */
