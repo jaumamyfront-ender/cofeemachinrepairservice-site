@@ -85,6 +85,13 @@
   <link rel="dns-prefetch" href="//www.googletagmanager.com" />
   <link rel="dns-prefetch" href="//www.google-analytics.com" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+
   <!-- DANE STRUKTURALNE JSON-LD -->
   <script type="application/ld+json">
     {
@@ -391,6 +398,7 @@
   <div class="wrapperDecsriptionFirstBlock">
     <div class="containerDescription">
       <h1 class="nameOfCompany">Twoja Kolba - Serwis Ekspresow</h1>
+
       <section class="wrapperDescriptionAndMainImage">
         <div class="ImageDescription">
           <img
@@ -466,10 +474,15 @@
         <div class="track" id="track" aria-live="polite"></div>
       </div>
     </div>
-
-    <div class="controls">
-      <button class="btn" id="prev" aria-label="Предыдущие">⟨</button>
-      <button class="btn" id="next" aria-label="Следующие">⟩</button>
+  </div>
+  <div class="controls-wrapper">
+    <div class="controls-container">
+      <div class="swipe-carousel-button-wrapper">
+        <button class="btn" id="prev" aria-label="Предыдущие">⟨</button>
+      </div>
+      <div class="swipe-carousel-button-wrapper rght-btn">
+        <button class="btn" id="next" aria-label="Следующие">⟩</button>
+      </div>
     </div>
   </div>
 

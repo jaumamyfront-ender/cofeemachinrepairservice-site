@@ -165,12 +165,37 @@
 }
 
 /* Управление (опционально) */
-.controls {
+.controls-wrapper {
   display: flex;
   justify-content: center;
   gap: 12px;
   margin-top: 14px;
   user-select: none;
+}
+.controls-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 220px;
+}
+
+.swipe-carousel-button-wrapper {
+  width: 100px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+.swipe-carousel-button-wrapper:hover {
+  background-color: var(--colorbuttonpalleteSecond);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in;
+}
+.rght-btn {
+  display: flex;
+  justify-content: flex-end;
 }
 .btn {
   background: #1a1a1a;

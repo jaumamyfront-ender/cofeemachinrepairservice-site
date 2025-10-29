@@ -28,7 +28,7 @@
 }
 
 .buttonWhatsApp {
-  background: #99d5a8;
+  background: var(--colorwhatsapp);
   border-color: transparent;
   border-radius: 50%;
   width: 50px;
@@ -40,7 +40,7 @@
 
 .buttonWhatsApp:hover {
   transform: translateY(-1px);
-  background: #08d237;
+  background: var(--colorwhatsapphover);
 }
 .btn {
   background: #1a1a1a;

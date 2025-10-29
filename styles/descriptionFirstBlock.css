@@ -22,6 +22,7 @@
   font-size: 60px;
   text-align: center;
   text-wrap: auto;
+  /* font-family: Montserrat Alternates; */
 }
 
 .wrapperDescriptionAndMainImage {
@@ -132,11 +133,19 @@
   margin: 0 10px;
   border-radius: 30px;
   background-color: var(--colorbutton);
+  background-color: var(--colorbuttonpallete);
   font-size: 20px;
   font-weight: 100;
   width: 180px;
   height: 70px;
   border-style: dashed;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+.callMaintanace:hover {
+  cursor: pointer;
+  /* background-color: var(--standardgreencolor); */
+  background-color: var(--colorbuttonpalletehover);
+  transition: background-color 0.3s ease-in;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .wrapperDescriptionAndMainImage {
