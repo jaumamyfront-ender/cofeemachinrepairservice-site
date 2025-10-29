@@ -458,4 +458,32 @@
       </section>
     </div>
   </div>
+  <div class="wrap">
+    <!-- <h1 class="title"></h1> -->
+
+    <div class="filmstrip" aria-label="Карусель изображений в стиле фотоплёнки">
+      <div class="viewport" id="viewport">
+        <div class="track" id="track" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="btn" id="prev" aria-label="Предыдущие">⟨</button>
+      <button class="btn" id="next" aria-label="Следующие">⟩</button>
+    </div>
+  </div>
+
+  <!-- Лайтбокс -->
+  <div
+    class="lightbox"
+    id="lightbox"
+    aria-hidden="true"
+    role="dialog"
+    aria-label="Просмотр изображения в полном размере"
+  >
+    <button class="lightbox__close" id="closeLb" aria-label="Закрыть">
+      Закрыть ✕
+    </button>
+    <img class="lightbox__img" id="lightboxImg" alt="Открытое изображение" />
+  </div>
 </body>

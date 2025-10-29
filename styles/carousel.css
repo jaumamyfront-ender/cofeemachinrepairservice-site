@@ -29,10 +29,11 @@
 } */
 
 .wrap {
-  width: min(1200px, 96vw);
+  width: min(120%);
   max-width: var(--max);
   margin: 0 auto;
-  padding: 0 18px;
+  /* padding: 0 18px; */
+  margin-top: 3%;
 }
 
 .title {
@@ -43,16 +44,26 @@
 
 /* ====== ПЛЁНКА (декор + область слайдов) ====== */
 .filmstrip {
+  background-image: url("./../images/carouselimages/backgroundFilmStrip.png");
+  background-size: contain;
   position: relative;
-  background: var(--film-color);
-  padding: 28px 18px; /* верх/низ = планки с перфорацией */
-  border-radius: 16px;
+  background-repeat: repeat-x;
+  padding: 38px 18px;
+  border-radius: 0px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
+/* .filmstrip {
+  position: relative;
+  background: var(--film-color);
+  padding: 28px 18px; 
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+} */
 
 /* Перфорация сверху и снизу */
-.filmstrip::before,
+/* .filmstrip::before,
 .filmstrip::after {
   content: "";
   position: absolute;
@@ -74,7 +85,7 @@
 }
 .filmstrip::after {
   bottom: 6px;
-}
+} */
 
 .viewport {
   overflow: hidden; /* маска для трека */

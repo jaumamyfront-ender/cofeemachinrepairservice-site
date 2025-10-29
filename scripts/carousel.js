@@ -1,19 +1,11 @@
 // ================== Настройки ==================
 const IMAGES = [
   // Поставьте свои URL или локальные пути. Для примера — Picsum/Unsplash.
-  "../images/20210329_194429.jpg",
-  "../images/20210520_211236.jpg",
-  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1520975922284-5f1d2c36f1a2?q=80&w=1600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1520974735194-8d95f75768b8?q=80&w=1600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=1600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1500043357865-c6b8827edf21?q=80&w=1600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1500534310680-06894103f1a9?q=80&w=1600&auto=format&fit=crop",
+  "./../images/carouselimages/itemOne.png",
+  "./../images/carouselimages/itemSecond.png",
+  "./../images/carouselimages/itemThird.png",
+  "./../images/carouselimages/itemFour.jpg",
+  "./../images/carouselimages/itemFive.jpg",
 ];
 
 const AUTOPLAY_MS = 3000; // интервалы автопрокрутки
