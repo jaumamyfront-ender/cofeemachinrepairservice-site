@@ -163,3 +163,18 @@ h6 {
   font-weight: 900;
   font-style: italic;
 }
+.line-out {
+  display: flex;
+  justify-self: center;
+  min-width: 1280px;
+  max-width: 1440px;
+  height: 2px;
+  background-color: #a17c6b;
+  margin: 1%;
+}
+.wrapper-app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

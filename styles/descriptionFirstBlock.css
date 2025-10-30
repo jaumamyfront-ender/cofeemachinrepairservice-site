@@ -52,6 +52,7 @@
   position: relative;
   font-family: "Inter", sans-serif;
   background: transparent;
+  align-self: end;
 }
 
 /* "вырез" внизу справа */
@@ -128,6 +129,7 @@
   flex-direction: row;
   margin-top: 5%;
   justify-content: center;
+  margin-right: 5%;
 }
 .callMaintanace {
   margin: 0 10px;
