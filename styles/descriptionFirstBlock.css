@@ -14,15 +14,30 @@
   justify-self: center;
   justify-content: space-around;
 }
+
 .nameOfCompany {
-  display: flex;
-  align-self: center;
-  order: 1;
+  display: block;
   color: var(--colormaintext);
   font-size: 60px;
   text-align: center;
-  text-wrap: auto;
-  /* font-family: Montserrat Alternates; */
+  word-wrap: break-word; /* перенос длинных слов */
+  overflow-wrap: break-word; /* современный аналог */
+  line-height: 1.1;
+  margin: 0 auto;
+  max-width: 90%; /* ограничивает ширину, чтобы текст переносился */
+}
+
+/* адаптивное уменьшение шрифта на маленьких экранах */
+@media (max-width: 768px) {
+  .nameOfCompany {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nameOfCompany {
+    font-size: 28px;
+  }
 }
 
 .wrapperDescriptionAndMainImage {
@@ -39,7 +54,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
+
 .descriptionShortContainer {
   width: 95%;
   max-width: 480px;
@@ -149,7 +166,14 @@
   background-color: var(--colorbuttonpalletehover);
   transition: background-color 0.3s ease-in;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+.nameOfCompany-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-self: center;
+  height: auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1220px) {
   .wrapperDescriptionAndMainImage {
     margin-top: 1%;
   }
@@ -158,8 +182,42 @@
     max-width: none;
   }
 }
-@media screen and (min-width: 360px) and (max-width: 680px) {
-  .nameOfCompany {
-    font-size: 40px;
+@media (max-width: 769px) {
+  .descriptionShortContainer {
+    width: 95%;
+    max-width: 480px;
+    padding: 20px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-radius: 16px 16px 16px 16px;
+    position: relative;
+    font-family: "Inter", sans-serif;
+    background: transparent;
+    align-self: center;
+  }
+  .descriptionShortContainer:after,
+  .vertical-line,
+  .thin-line {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 500px) {
+  .mainDescriptionSettings {
+    font-size: 22px;
+  }
+  .otherDescriptionSettings {
+    font-size: 15px;
+    margin: 0 auto;
+    word-wrap: break-word; /* перенос длинных слов */
+    overflow-wrap: break-word; /* современный аналог */
+    line-height: 1.1;
+    margin: 0 auto;
+    max-width: 90%; /* ограничивает ширину, чтобы текст переносился */
+  }
+  .descriptionShortContainer {
+    padding: 7px;
   }
 }
