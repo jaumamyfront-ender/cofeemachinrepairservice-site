@@ -18,7 +18,7 @@ body {
   background: transparent;
   border-radius: 16px;
   padding: 2rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 16px 16px 16px 16px rgba(0, 0, 0, 0.08);
 }
 
 .subtitle {
