@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 5%;
-  border-radius: 16px;
+  /* border-radius: 16px;
   padding: 2rem;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 2px 2px 22px 2px rgba(0, 0, 0, 0.35); */
 }
 .third-block__header {
   display: flex;
@@ -12,6 +13,7 @@
   align-self: center;
   justify-self: center;
   height: auto;
+  flex-direction: column;
 }
 .third-block__title {
   display: block;
@@ -28,7 +30,8 @@
   color: var(--colormaintext);
   font-weight: 600;
   font-size: 18px;
-  margin-left: 40%;
+
+  text-align: center;
 }
 .third-block__content {
   display: flex;

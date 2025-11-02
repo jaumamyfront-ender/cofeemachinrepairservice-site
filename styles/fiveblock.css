@@ -1,0 +1,49 @@
+.section-five-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: auto;
+  height: auto;
+  margin-top: 3%;
+}
+
+.section-five-container-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+.section-five-why-we {
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-radius: 22px 22px 22px 22px;
+  width: 30%;
+  height: 200px;
+  height: auto;
+  padding: 1rem;
+  padding: 20px;
+}
+.section-five-why-we p {
+  font-weight: 600;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: var(--colormaintext);
+  text-wrap: wrap;
+  word-wrap: break-word;
+}
+.section-five-why-we h3 {
+  font-weight: 600;
+  font-size: clamp(1.45rem, 1.5vw, 2rem);
+  color: var(--colormaintext);
+}
+@media (max-width: 800px) {
+  .section-five-container-description {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-five-why-we {
+    width: 100%;
+    margin: 1%;
+  }
+}
