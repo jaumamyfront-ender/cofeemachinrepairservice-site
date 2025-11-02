@@ -38,6 +38,7 @@
   font-size: clamp(1.45rem, 1.5vw, 2rem);
   color: var(--colormaintext);
 }
+
 @media (max-width: 800px) {
   .section-five-container-description {
     flex-direction: column;

@@ -52,7 +52,7 @@ textarea {
   border: 1px solid #3b2e28;
   border-radius: 55px;
   padding: 12px 28px;
-  font-size: clamp(1rem, 1.5vw, 1.8rem);
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   color: var(--colormaintext);
   line-height: 1.2;
   cursor: pointer;
@@ -113,5 +113,10 @@ span {
 
   .privacy {
     font-size: 11px;
+  }
+}
+@media (max-width: 876px) {
+  .form-container {
+    flex-direction: column;
   }
 }
