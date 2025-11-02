@@ -49,6 +49,7 @@
 }
 
 .ImageDescription {
+  max-width: 800px;
 }
 .descriptionShortContainerwrapper {
   display: flex;
