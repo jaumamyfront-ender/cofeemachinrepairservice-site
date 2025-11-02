@@ -48,7 +48,7 @@ textarea {
   width: 100%;
 }
 
-button {
+.buttons button {
   border: 1px solid #3b2e28;
   border-radius: 55px;
   padding: 12px 28px;

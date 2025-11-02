@@ -33,7 +33,7 @@
   max-width: var(--max);
   margin: 0 auto;
   /* padding: 0 18px; */
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 .title {
@@ -171,6 +171,7 @@
   gap: 12px;
   margin-top: 14px;
   user-select: none;
+  margin-bottom: 5%;
 }
 .controls-container {
   display: flex;
@@ -178,7 +179,8 @@
   justify-content: space-between;
   flex-grow: 0;
   flex-shrink: 1;
-  flex-basis: 220px;
+  width: auto;
+  min-width: 220px;
 }
 
 .swipe-carousel-button-wrapper {

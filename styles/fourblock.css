@@ -79,12 +79,12 @@ body {
 
 .job {
   font-weight: 600;
-  font-size: clamp(1rem, 1.5vw, 1.75rem);
+  font-size: clamp(1.45rem, 1.5vw, 2rem);
   color: var(--colormaintext);
 }
 .job-description {
   font-weight: 600;
-  font-size: clamp(1rem, 1.5vw, 1rem);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
   color: var(--colormaintext);
 }
 .footer-note {
