@@ -11,6 +11,10 @@ body {
   line-height: 1.5;
   padding: 2rem 1rem;
 } */
+.pricing {
+  margin-top: 1%;
+  margin-bottom: 5%;
+}
 
 .container {
   max-width: 900px;
@@ -19,7 +23,6 @@ body {
   border-radius: 16px;
   padding: 2rem;
   /* box-shadow: 2px 2px 22px 2px rgba(0, 0, 0, 0.35); */
-  margin-top: 5%;
 }
 
 .subtitle {
