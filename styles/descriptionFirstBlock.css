@@ -163,7 +163,6 @@
 }
 .callMaintanace:hover {
   cursor: pointer;
-  /* background-color: var(--standardgreencolor); */
   background-color: var(--colorbuttonpalletehover);
   transition: background-color 0.3s ease-in;
 }
