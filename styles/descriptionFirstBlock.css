@@ -24,7 +24,7 @@
   overflow-wrap: break-word; /* современный аналог */
   line-height: 1.1;
   margin: 0 auto;
-  max-width: 90%; /* ограничивает ширину, чтобы текст переносился */
+  max-width: 100%; /* ограничивает ширину, чтобы текст переносился */
 }
 
 /* адаптивное уменьшение шрифта на маленьких экранах */
@@ -172,6 +172,13 @@
   align-self: center;
   justify-self: center;
   height: auto;
+  justify-content: center;
+  flex-direction: column;
+}
+.nameOfCompany-wrapper p {
+  margin-left: 0px;
+  text-align: center;
+  font-size: 22px;
 }
 @media screen and (min-width: 768px) and (max-width: 1220px) {
   .wrapperDescriptionAndMainImage {
