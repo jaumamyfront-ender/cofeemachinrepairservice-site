@@ -126,3 +126,8 @@
     margin-top: 5%;
   }
 }
+@media (max-width: 600px) {
+  .container-description-children {
+    padding: 10px;
+  }
+}
