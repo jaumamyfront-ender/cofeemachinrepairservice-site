@@ -167,8 +167,8 @@ h6 {
 .line-out {
   display: flex;
   justify-self: center;
-  min-width: 1280px;
-  max-width: 1440px;
+  min-width: 60%;
+  max-width: 60%;
   height: 3px;
   background-color: #a17c6b;
   margin: 1%;
