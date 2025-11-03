@@ -279,3 +279,12 @@
     right: 14px;
   }
 }
+@media screen and (min-width: 200px) and (max-width: 640px) {
+  .slide {
+    /* prettier-ignore */
+    flex: 0 0 calc((100% - (var(--gap) * (var(--visible) - 1))) / var(--visible));
+  }
+  .filmstrip {
+    padding: 40px 0px 40px 0px;
+  }
+}
