@@ -245,8 +245,8 @@
   position: fixed;
   top: 27%;
   left: 65%;
-  background: #0f0f0f;
-  color: #ddd;
+  background: var(--colorbuttonpallete);
+  color: black;
   border: 1px solid #2a2a2a;
   padding: 10px 14px;
   border-radius: 999px;
@@ -261,7 +261,7 @@
   text-align: center;
 }
 .lightbox__close:hover {
-  background-color: var(--colorbuttonpalletehover);
+  background-color: #e79259;
   color: black;
 }
 
