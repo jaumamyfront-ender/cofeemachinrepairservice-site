@@ -157,9 +157,14 @@
   background-color: var(--colorbuttonpallete);
   font-size: 20px;
   font-weight: 100;
-  width: 180px;
+  width: 220px;
   height: 70px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 .callMaintanace:hover {
   cursor: pointer;
