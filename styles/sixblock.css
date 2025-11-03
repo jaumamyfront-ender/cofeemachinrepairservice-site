@@ -92,10 +92,6 @@ span {
 
 /* 📱 Адаптивность */
 @media (max-width: 600px) {
-  body {
-    padding: 10px;
-  }
-
   input,
   textarea {
     font-size: 14px;
@@ -118,5 +114,20 @@ span {
 @media (max-width: 876px) {
   .form-container {
     flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  input,
+  textarea {
+    height: 40px;
+  }
+
+  textarea {
+    height: 70px;
+    resize: none;
+  }
+  .buttons button {
+    min-width: 220px;
+    height: 60px;
   }
 }

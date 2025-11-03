@@ -138,8 +138,8 @@
 }
 .otherDescriptionSettings {
   color: var(--colormaintext);
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 20px;
   margin-left: 40%;
 }
 .buttonsCallcontainer {
@@ -158,7 +158,6 @@
   font-weight: 100;
   width: 180px;
   height: 70px;
-  border-style: inset;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
 }
 .callMaintanace:hover {
@@ -224,7 +223,7 @@
   }
 
   .otherDescriptionSettings {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     text-align: center;
     margin: 8px auto 0 auto;
@@ -266,6 +265,10 @@
     height: 55px;
     font-size: 16px;
     margin: 5px 0;
+    display: flex; /* Включаем flex-контейнер */
+    justify-content: center; /* Горизонтальное выравнивание */
+    align-items: center; /* Вертикальное выравнивание */
+    text-align: center; /* Центрирование текста */
   }
 
   /* Скрыть декоративные линии */
@@ -285,8 +288,8 @@
 }
 @media screen and (min-width: 500px) and (max-width: 600px) {
   .callMaintanace {
-    width: 140px;
+    width: 160px;
     height: 70px;
-    font-size: 20px;
+    font-size: 18px;
   }
 }

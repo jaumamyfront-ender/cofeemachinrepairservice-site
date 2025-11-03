@@ -79,12 +79,12 @@ body {
 
 .job {
   font-weight: 600;
-  font-size: clamp(1.45rem, 1.5vw, 2rem);
+  font-size: 22px;
   color: var(--colormaintext);
 }
 .job-description {
   font-weight: 600;
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-size: 18px;
   color: var(--colormaintext);
 }
 .footer-note {
@@ -107,5 +107,22 @@ body {
     font-weight: 600;
     color: #3b3b3b;
     margin-top: 0.4rem;
+  }
+}
+@media (max-width: 500px) {
+  .job {
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--colormaintext);
+  }
+  .job-description {
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--colormaintext);
+  }
+}
+@media (max-width: 700px) {
+  .table-row {
+    gap: 0.6rem;
   }
 }
