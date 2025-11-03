@@ -59,7 +59,7 @@
 }
 .third-block__description__wrapper__children {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
 }
@@ -76,9 +76,9 @@
   font-weight: 500;
   font-size: 20px;
   text-wrap: nowrap;
-  align-self: center;
+  /* align-self: center;
   margin-left: 0%;
-  margin-top: 6%;
+  margin-top: 6%; */
 }
 
 /* адаптивное уменьшение шрифта на маленьких экранах */
@@ -159,10 +159,10 @@
   }
   .third-block__subtitle__children {
     text-wrap: wrap;
-    align-self: unset;
+    /* align-self: unset;
     margin-top: 0px;
     margin-left: 0px;
-    margin-left: 20px;
+    margin-left: 20px; */
   }
   .third-block__description__container {
     width: auto;
@@ -222,10 +222,10 @@
   }
   .third-block__subtitle__children {
     text-wrap: wrap;
-    align-self: unset;
+    /* align-self: unset;
     margin-top: 0px;
     margin-left: 0px;
-    margin-left: 20px;
+    margin-left: 20px; */
   }
   .third-block__description__container {
     width: auto;
