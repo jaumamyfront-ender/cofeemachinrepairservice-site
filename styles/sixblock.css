@@ -111,7 +111,7 @@ span {
     font-size: 11px;
   }
 }
-@media (max-width: 876px) {
+@media (max-width: 1440px) {
   .form-container {
     flex-direction: column;
   }
