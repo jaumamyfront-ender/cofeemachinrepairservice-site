@@ -243,8 +243,8 @@
 
 .lightbox__close {
   position: fixed;
-  top: 18px;
-  right: 18px;
+  top: 27%;
+  left: 65%;
   background: #0f0f0f;
   color: #ddd;
   border: 1px solid #2a2a2a;
@@ -253,6 +253,16 @@
   cursor: pointer;
   font-size: 14px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  text-align: center;
+}
+.lightbox__close:hover {
+  background-color: var(--colorbuttonpalletehover);
+  color: black;
 }
 
 /* ====== РЕСПОНСИВ ====== */

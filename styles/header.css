@@ -77,5 +77,9 @@
   .btn {
     font-size: 14px;
     text-align: center;
+    align-items: center;
+  }
+  .links a {
+    font-size: 12px;
   }
 }
