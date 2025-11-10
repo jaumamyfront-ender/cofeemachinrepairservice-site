@@ -252,6 +252,7 @@
   <!-- <script src="/scripts/autochangelanguage.js" defer></script> -->
   <script src="/scripts/carousel.js" defer></script>
   <script src="/scripts/clickscrollauto.js" defer></script>
+  <script src="/scripts/sendFormJs.js" defer></script>
   <link rel="stylesheet" href="/styles/globalstyles.css" />
   <link rel="stylesheet" href="/styles/carousel.css" />
 
@@ -837,10 +838,11 @@
       </div>
 
       <div class="form-container" id="targetCallAndEmail">
-        <form class="contact-form">
-          <input type="text" placeholder="Twoje imię" required />
-          <input type="tel" placeholder="(000)00-000-00-00" required />
+        <form class="contact-form" action="https://formspree.io/f/mgvrwjlj" method="POST" id="contactForm"і>
+          <input type="text" name="name" placeholder="Twoje imię" required />
+          <input type="tel" name="phone" placeholder="(000)00-000-00-00" required />
           <textarea
+          name="message"
             placeholder="Opisz swój problem: model, objawy, kiedy się zaczął"
             required
           ></textarea>
@@ -856,7 +858,7 @@
       2.11L8.09 9.91a16 16 0 0 0 6 6l1.72-1.11a2 2 0 0 1 2.11-.45
       c.76.24 1.55.42 2.36.54A2 2 0 0 1 22 16.92z" />
     </svg> Zadzwon<br /><span>na telefon</span></button>
-            <button class="submit"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            <button class="submit" type="submit" form="contactForm"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
       class="icon">
       <line x1="22" y1="2" x2="11" y2="13" />
@@ -877,6 +879,7 @@
             Nie przekazujemy informacji osobom trzecim.
           </p>
         </div>
+        <p id="formMessage" style="display:none; color:green;">✅ Dziękujemy! Zgłoszenie zostało wysłane.</p>
       </div>
     </section>
     <span class="line-out"></span>
