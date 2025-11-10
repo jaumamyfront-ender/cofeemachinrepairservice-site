@@ -42,6 +42,21 @@
   transform: translateY(-1px);
   background: var(--colorwhatsapphover);
 }
+.telegramButton {
+  background: rgb(89, 126, 161);
+  border-color: transparent;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.telegramButton:hover {
+  transform: translateY(-1px);
+  background: rgb(122, 171, 218);
+}
 .btn {
   display: flex;
   background: #1a1a1a;
