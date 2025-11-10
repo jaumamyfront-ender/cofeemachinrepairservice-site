@@ -230,10 +230,11 @@
 }
 .lightbox.open {
   display: flex;
+  flex-direction: column;
 }
 
 .lightbox__img {
-  max-width: min(92vw, 1400px);
+  max-width: min(92vw, 1000px);
   max-height: 86vh;
   width: auto;
   height: auto;
@@ -242,9 +243,8 @@
 }
 
 .lightbox__close {
-  position: fixed;
-  top: 27%;
-  left: 65%;
+  margin-bottom: 20px;
+  margin-left: 70%;
   background: var(--colorbuttonpallete);
   color: black;
   border: 1px solid #2a2a2a;
