@@ -28,7 +28,7 @@ textarea {
   width: 100%;
   padding: 12px 18px;
   border: 1px solid #3b2e28;
-  border-radius: 55px;
+  border-radius: 25px;
   font-size: clamp(1.45rem, 0.5vw, 2rem);
   font-weight: 500;
   background-color: transparent;
@@ -53,7 +53,7 @@ textarea {
 .buttons button {
   border: 1px solid #3b2e28;
   border-radius: 55px;
-  padding: 12px 28px;
+  padding: 6px 22px;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
   color: var(--colormaintext);
   line-height: 1.2;
@@ -61,13 +61,14 @@ textarea {
   background: transparent;
   transition: 0.3s;
   min-width: 220px;
-  height: 80px;
+  max-height: 90px;
+  min-height: 50px;
 }
 
-button.submit {
+/* button.submit {
   background-color: #dff4e4;
   border: none;
-}
+} */
 
 button.submit:hover {
   background-color: #c7ecd1;
@@ -76,8 +77,64 @@ button.submit:hover {
 
 button.email:hover {
   background-color: #f5ede7;
+  border-style: dashed;
 }
 
+button.call:hover {
+  background-color: #f5ede7;
+  border-style: dashed;
+}
+button.email {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 40%;
+}
+button.email div {
+  margin: 3px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+button.call {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 40%;
+  flex-wrap: wrap;
+}
+button.call div {
+  margin: 3px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+button.submit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 40%;
+  flex-wrap: wrap;
+}
+button.submit div {
+  margin: 3px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+button.email span {
+  margin-top: 2px;
+}
+button.call span {
+  margin-top: 2px;
+}
+button.submit span {
+  margin-top: 2px;
+}
 span {
   font-size: 13px;
   color: #6d5a52;

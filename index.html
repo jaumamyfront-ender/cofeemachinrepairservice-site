@@ -397,21 +397,13 @@
         </div>
         <div class="languageChangeContainer">
           <nav class="links">
-            <a href="/en/" onclick="localStorage.setItem('lang','en')"
-              >🇵🇱 Polish</a
+            <a href="/" onclick="localStorage.setItem('lang','pl')"
+              >🇵🇱 Polski</a
             >
             |
 
             <a href="/ua/" onclick="localStorage.setItem('lang','uk')"
               >🇺🇦 Українська</a
-            >
-            |
-            <a href="/en/" onclick="localStorage.setItem('lang','en')"
-              >🇬🇧 English</a
-            >
-            |
-            <a href="/ru/" onclick="localStorage.setItem('lang','ru')"
-              >🇷🇺 Русский</a
             >
           </nav>
         </div>
@@ -885,7 +877,7 @@
       <span class="line-out"></span>
       <section class="section-six-wrapper">
         <div class="third-block__header">
-          <h1 class="third-block__title">Zadzwoń do czarodzieja</h1>
+          <h1 class="third-block__title">Zadzwoń lub Napisz</h1>
         </div>
 
         <div class="form-container" id="targetCallAndEmail">
@@ -910,69 +902,80 @@
           </form>
           <div>
             <div class="buttons">
-              <button class="email">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="icon"
-                >
-                  <path
-                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 
+              <button class="call">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 
       19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 
       4.11 2h3a2 2 0 0 1 2 1.72c.12.81.3 1.6.54 2.36a2 2 0 0 1-.45 
       2.11L8.09 9.91a16 16 0 0 0 6 6l1.72-1.11a2 2 0 0 1 2.11-.45
       c.76.24 1.55.42 2.36.54A2 2 0 0 1 22 16.92z"
-                  />
-                </svg>
-                Zadzwon<br /><span>na telefon</span>
+                    />
+                  </svg>
+                </div>
+                <div><p>Zadzwon</p></div>
+                <div><span>na telefon</span></div>
               </button>
               <button class="submit" type="submit" form="contactForm">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="icon"
-                >
-                  <line x1="22" y1="2" x2="11" y2="13" />
-                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
-                </svg>
-                Wyślij<br /><span>zgłoszenie</span>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon"
+                  >
+                    <line x1="22" y1="2" x2="11" y2="13" />
+                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                  </svg>
+                </div>
+                <div><p>Wyślij</p></div>
+                <div><span>zgłoszenie</span></div>
               </button>
               <button class="email">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="icon"
-                >
-                  <path
-                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4
       c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                  />
-                  <polyline points="22,6 12,13 2,6" />
-                </svg>
-                Napisz<br /><span>na e-mail</span>
+                    />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div>
+                  <p>Napisz</p>
+                </div>
+                <div><span>na e-mail</span></div>
               </button>
             </div>
 
             <p class="privacy">
-              Wysyłając formularz, wyrażasz zgodę na przetwarzanie danych
+              ** Wysyłając formularz, wyrażasz zgodę na przetwarzanie danych
               osobowych.<br />
               Nie przekazujemy informacji osobom trzecim.
             </p>
